@@ -1,0 +1,41 @@
+<!-- first name then last name button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script lang = "JavaScript">
+    function Nconcat(){
+        var input = document.getElementById("fname");
+        var inp = input.value;
+        console.log(inp);
+        var output = document.getElementById("lname");
+        var out = output.value;
+        console.log(out)
+        answer = document.getElementById("flname");
+        answer.value = inp + ' '+ out;
+    }
+    
+    
+    </script>
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>First Name: </td>
+            <td><input type = "text" id = "fname"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type = "text" id ="lname"></td>
+        </tr>
+        <tr>
+            <td>Full name: </td>
+           <td> <input type = "text" id = "flname"></td>
+        </tr>
+        <tr>
+        <button onclick = "Nconcat();">smush em</button>
+        </tr>
+</body>
+</html>
